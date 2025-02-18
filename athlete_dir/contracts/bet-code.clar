@@ -1,4 +1,4 @@
-;; Production-Ready Performance Betting Contract
+;; Athlete Performance Betting Smart Contract
 
 ;; Error codes
 (define-constant ERR-UNAUTHORIZED-ACCESS (err u100))
@@ -19,8 +19,8 @@
 (define-constant REQUIRED-STAKE-RATIO u150) ;; 150%
 (define-constant MARGIN-CALL-THRESHOLD u120) ;; 120%
 (define-constant MINIMUM-PERFORMANCE-BET u100000000) ;; 1.00 tokens (8 decimals)
-(define-constant MAXIMUM-PERFORMANCE-VALUE u1000000000000)
-(define-constant MAXIMUM-UINT-VALUE u340282366920938463463374607431768211455)
+(define-constant MAXIMUM-PERFORMANCE-VALUE u1000000000000) ;; Set reasonable maximum value
+(define-constant MAXIMUM-UINT-VALUE u340282366920938463463374607431768211455) ;; 2^128 - 1
 
 ;; Data variables
 (define-data-var stats-feed-last-update uint u0)
